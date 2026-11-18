@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+
+    margin: 0;
+    background-color: gainsboro;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*organização geral da página*/
+
+.layout-pagina{
+    display: grid; 
+
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer"
+    ;
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100vh;
+}
+
+/*Cabeçalho*/
+
+.cabecalho{
+    grid-area: header;
+    background-color: #722F37;
+    color: whitesmoke;
+    padding: 25px;
+    text-align: center;
+}
+
+.cabecalho h1{
+    margin: 0 0 10px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif fantasy;
+}
+
+.cabecalho p{
+    margin: 0;
+}
+
+/*Menu da Lateral esquerdo*/
+
+.barra-lateral{
+    grid-area: sidebar;
+    margin-bottom: 20px;
+    background-color:#B7ADA4; 
+    padding: 10px;
+}
+
+.barra-lateral h2{
+    color: black;
+    text-decoration: dotted;
+    text-align: center;
+}
+
+.barra-lateral ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.barra-lateral a{
+    display:list-item;
+    background-color:#818080;
+    color: black;
+    padding: 35px;
+    border-radius: 5px;
+}
+
+.barra-lateral a:hover{
+    background-color: white;
+    color: black;
+}
+
+.barra-lateral li{
+    margin-bottom: 10px;
+}
+
+/*Grid de Cards*/
+
+.grid-principal{
+    grid-area: main;
+    padding: 30px;
+}
+
+.grid-principal h2{
+    margin-top: 0;
+    color:#722F37;
+}
+
+.grid-principal h3{
+    padding: 1px;
+    text-transform:uppercase;
+}
+
+.grid-cards{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    gap: 2rem;
+}
+
+.card{
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid burlywood;
+    border-radius: 5px; 
+    box-shadow: 0 3px 8px gray
+}
+
+.card p{
+    line-height: 25px;
+}
+
+.card a{
+    display: inline-block;
+    color: #BA8E23;
+    padding: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover{
+    color: blue;
+}
+
+/*Rodapé*/
+
+.rodape{
+    grid-area: footer;
+
+    color: grey;
+    text-align: center;
+    padding: 1px;
+}

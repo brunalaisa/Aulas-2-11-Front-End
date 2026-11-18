@@ -1,0 +1,33 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: steelblue;
+    background-color: rgb(221, 224, 209);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 12px;
+
+}
+
+section{
+    background-color: rgb(242, 243, 237);
+    border-radius: 12px;
+}
+main{
+    background-color: white;
+    padding-top: 15px;
+    border-radius: 12px;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+}
+
+p{
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+}
+
+a{
+    color: rgb(58, 204, 0) ;
+    font-weight: bold;
+}

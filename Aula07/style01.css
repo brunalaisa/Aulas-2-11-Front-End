@@ -1,0 +1,21 @@
+body{
+    background-color: burlywood;
+    text-align: center;
+}
+
+
+.c21{
+    color: brown;
+    border: 2px solid rebeccapurple;
+    border-radius: 3px solid yellow;
+
+}
+
+#aviso{
+    color: darkgoldenrod;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+
